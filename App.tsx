@@ -7,6 +7,7 @@ import {
 import { Button, NativeBaseProvider } from "native-base";
 import { Loading } from "@components/Loading";
 import { THEME } from "./src/theme";
+import { Signin } from "@screens/Signin";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,12 +17,11 @@ export default function App() {
 
   return (
     <NativeBaseProvider theme={THEME}>
-      {fontsLoaded ? (
+      {!fontsLoaded ? (
         <Loading />
       ) : (
         <>
-          <Text>Open up App.tsx to start working on your app!</Text>
-          <Button>ok</Button>
+          <Signin />
           <StatusBar
             barStyle="light-content"
             backgroundColor={"transparent"}
