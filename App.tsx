@@ -8,6 +8,7 @@ import { Button, NativeBaseProvider } from "native-base";
 import { Loading } from "@components/Loading";
 import { THEME } from "./src/theme";
 import { Signin } from "@screens/Signin";
+import { Signup } from "@screens/Signup";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,7 +22,7 @@ export default function App() {
         <Loading />
       ) : (
         <>
-          <Signin />
+          <Signup />
           <StatusBar
             barStyle="light-content"
             backgroundColor={"transparent"}
