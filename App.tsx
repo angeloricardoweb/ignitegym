@@ -9,6 +9,7 @@ import { Loading } from "@components/Loading";
 import { THEME } from "./src/theme";
 import { Signin } from "@screens/Signin";
 import { Signup } from "@screens/Signup";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
         <Loading />
       ) : (
         <>
-          <Signup />
+          <Routes />
           <StatusBar
             barStyle="light-content"
             backgroundColor={"transparent"}

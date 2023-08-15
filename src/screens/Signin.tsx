@@ -12,7 +12,7 @@ export function Signin() {
         flexGrow: 1,
       }}
     >
-      <VStack flex={1} bg="gray.700" px="10" pb={10}>
+      <VStack flex={1} px="10" pb={10}>
         <Image
           source={BackgroundPng}
           alt="Pessoas treinando"
